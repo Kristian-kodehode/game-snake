@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c873273b0e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="gradientbg">
+      <div id="gameContainer" class="gameContainer">
+        <canvas
+          id="gameBoard"
+          class="gameboard"
+          width="600"
+          height="600"
+        ></canvas>
+
+        <div class="playbuttons">
+          <button id="button-up" class="button-arrows">
+            <i class="fa-solid fa-chevron-up" style="color: #ffffff"></i>
+          </button>
+          <div class="buttons-lr">
+            <button id="button-left" class="button-arrows">
+              <i class="fa-solid fa-chevron-left" style="color: #ffffff"></i>
+            </button>
+            <button id="button-down" class="button-arrows">
+              <i class="fa-solid fa-chevron-down" style="color: #ffffff"></i>
+            </button>
+            <button id="button-right" class="button-arrows">
+              <i class="fa-solid fa-chevron-right" style="color: #ffffff"></i>
+            </button>
+          </div>
+        </div>
+        <div id="scoreText">0</div>
+        <button id="resetButton">Play</button>
+
+        <!-- <button id="startButton">Start</button> -->
+      </div>
+    </div>
+  </body>
+</html>
