@@ -86,6 +86,7 @@ function createFood() {
   foodY = randomFood(0, gameHeight - unitSize);
   drawFood();
 }
+
 // Makes the emojis that represents food
 function drawFood() {
   const foodFillColor = foodColors[foodCounter % foodColors.length];
@@ -123,6 +124,7 @@ function moveSnake() {
     snake.pop();
   }
 }
+
 function increaseSpeed() {
   tickInterval -= speedIncrease;
   if (tickInterval < 0) {
@@ -139,41 +141,6 @@ function drawSnake() {
     ctx.strokeRect(snakePart.x, snakePart.y, unitSize, unitSize);
   });
 }
-//Snake as circles:
-// function drawSnake() {
-//   ctx.fillStyle = snakeColor;
-//   ctx.strokeStyle = snakeBorder;
-//   snake.forEach((snakePart) => {
-//     ctx.beginPath();
-//     ctx.arc(
-//       snakePart.x + unitSize / 2,
-//       snakePart.y + unitSize / 2,
-//       unitSize / 2,
-//       0,
-//       2 * Math.PI
-//     );
-//     ctx.fill();
-//     ctx.stroke();
-//   });
-// }
-// Decreasing snake design:
-// function drawSnake() {
-//   ctx.fillStyle = snakeColor;
-//   ctx.strokeStyle = snakeBorder;
-
-//   snake.forEach((snakePart, index) => {
-//     const maxRadius = unitSize / 2;
-//     const minRadius = 2;
-//     const radius = maxRadius - (index * (maxRadius - minRadius)) / snake.length;
-//     const x = snakePart.x + unitSize / 2;
-//     const y = snakePart.y + unitSize / 2;
-
-//     ctx.beginPath();
-//     ctx.arc(x, y, radius, 0, 2 * Math.PI);
-//     ctx.fill();
-//     ctx.stroke();
-//   });
-// }
 
 // Snake event handlers
 function changeDirection(event) {

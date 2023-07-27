@@ -187,7 +187,6 @@ div {
 
 */
 
-/* Add centering styles to the game container */
 #gameContainer {
   padding: 20px;
   display: flex;
@@ -195,49 +194,46 @@ div {
   justify-content: center;
   align-items: center;
   height: 100vh; /* Adjust this to control the vertical position of the game */
-  background-color: #ff2323; /* A light gray background for the game container */
+  background-color: #ff2323;
 }
 
-/* Style the game board */
 #gameBoard {
   border: 16px solid hsla(0, 0%, 53%, 0.247);
   background-color: rgb(89, 25, 105);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
 }
 
-/* Style the score text */
 #scoreText {
   font-size: 80px;
   color: #e6e6e6;
-  margin-bottom: 1px; /* Add some spacing between the score text and buttons */
+  margin-bottom: 1px;
 }
 
-/* Style the reset button */
 #resetButton {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 22px;
   padding: 12px 32px;
   border-radius: 8px;
   cursor: pointer;
-  background-color: #4caf50; /* A green color for the reset button */
+  background-color: #4caf50;
   color: #fff;
   border: none;
   outline: none;
-  transition: background-color 0.2s ease; /* Add a smooth transition on hover */
+  transition: background-color 0.2s ease;
   margin-bottom: 80px;
 }
 
 #resetButton:hover {
-  background-color: #45a049; /* Darker green color on hover */
+  background-color: #45a049;
 }
 
 #resetButton:active {
-  background-color: #3e8e41; /* Slightly darker green color when pressed */
+  background-color: #3e8e41;
 }
 
 .gameboard-container {
   border: 3px solid #333;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the game board */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .playbuttons {
   display: none;
