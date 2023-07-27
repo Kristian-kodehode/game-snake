@@ -189,7 +189,7 @@ div {
 
 /* Add centering styles to the game container */
 #gameContainer {
-  padding: 40px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -258,6 +258,14 @@ Media Queries Phones and some Tablets
   #gameBoard {
     border: 12px solid hsla(0, 0%, 53%, 0.247);
   }
+
+  /* .score-reset-container {
+    display: flex;
+    align-items: start;
+  } */
+  #resetButton {
+    margin-bottom: 120px;
+  }
   .playbuttons {
     width: 70%;
     display: flex;
@@ -265,7 +273,7 @@ Media Queries Phones and some Tablets
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    margin-bottom: 40px;
+    /* margin-bottom: 16px; */
     margin-top: 32px;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
